@@ -1,21 +1,23 @@
 .container {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .header {
   display: flex;
   justify-content: center;
   background-color: darkslategray;
-  font-size: 45px;
-  font-family: 'Jim Nightshade', cursive;
+  font-size: 30px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .main {
+  display: flex;
   margin-bottom: 20px;
   text-align: center;
   font-size: large;
-  font-family: sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .input {
@@ -68,7 +70,7 @@ button {
   text-decoration: none;
   background: #f4f4f4f4;
   color: black;
-  font-family: sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -90,4 +92,21 @@ button:focus {
 
 button:active {
   transform: scale(0.99);
+}
+
+span {
+  font-family: sans-serif;
+}
+
+.foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#ftr {
+  margin-left: 10px;
 }
