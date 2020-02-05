@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Jim+Nightshade&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Madlib Exercise</title>
   </head>
@@ -17,7 +21,7 @@
           It was a <span id="adjective">____________</span> showdown between the
           competing dojos. The red clan and the blue clan had been at war for
           centuries. This fight took place in
-          <span id="city">____________</span>, and much
+          <span id="city">____________</span> and much
           <span id="fluid">____________</span> was spilled. Only members of the
           red clan came out alive. They will live to do
           <span id="martial">____________</span> style kata's another day.
@@ -46,24 +50,5 @@
       </div>
     </div>
   </body>
-  <script>
-    const myButton = document.getElementById('clickMe');
-    const adjective = document.getElementById('adjective');
-    const adjectiveInput = document.getElementById('adjectiveInput');
-    const city = document.getElementById('city');
-    const cityInput = document.getElementById('cityInput');
-    const fluid = document.getElementById('fluid');
-    const fluidInput = document.getElementById('fluidInput');
-    const martial = document.getElementById('martial');
-    const martialInput = document.getElementById('martialInput');
-
-    myButton.addEventListener('click', function(e) {
-      e.preventDefault();
-
-      adjective.innerHTML = adjectiveInput.value;
-      city.innerHTML = cityInput.value;
-      fluid.innerHTML = fluidInput.value;
-      martial.innerHTML = martialInput.value;
-    });
-  </script>
+  <script src="script.js"></script>
 </html>
