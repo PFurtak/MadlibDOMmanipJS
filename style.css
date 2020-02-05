@@ -14,14 +14,16 @@
   margin-bottom: 20px;
   text-align: center;
   font-size: large;
+  font-family: sans-serif;
 }
 
 .input {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   background-color: darkslategray;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: sans-serif;
 }
 
 body {
@@ -35,10 +37,52 @@ p {
   text-align: center;
 }
 
+form {
+  text-align: center;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
 #adjective,
 #city,
 #fluid,
 #martial {
   font-size: larger;
   font-weight: bolder;
+}
+
+button {
+  display: inline-block;
+  border-radius: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin: 0;
+  text-decoration: none;
+  background: #f4f4f4f4;
+  color: black;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+  background: white;
+}
+
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+button:active {
+  transform: scale(0.99);
 }
